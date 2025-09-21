@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ====== ESTILOS GENERALES ====== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9; 
+  color: #333;
+  line-height: 1.6;
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ====== BARRA NAVEGACION ====== */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #e0e0e0;
+  background-color: #f9f9f9;
+}
+
+nav h1 {
+  color: #024A70;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.navegacion {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navegacion li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navegacion li a:hover {
+  color: #024A70;
+}
+
+/* ====== SOBRE MI ====== */
+
+.informacion {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 0;
+}
+
+.informacion-img {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.bio-titulo {
+  font-size: 2rem;
+  color: #024A70;
+}
+
+.bio-texto {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ====== EDUCACIÓN ====== */
+
+.educacion {
+  padding: 3rem 0;
+}
+
+.educacion h2{
+  color: #024A70;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contenedor-edu {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  
+}
+
+.edu {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.edu:hover {
+  transform: scale(1.1);
+}
+
+
+.edu img {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+/* ====== HABILIDADES ====== */
+
+.habilidades {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.habilidades-titulo {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #024A70;
+}
+
+.contenedor-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hab-img {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.hab-img:hover {
+  transform: scale(1.1);
+}
+
+/* ====== REDES SOCIALES ====== */
+
+.sociales {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.contenedor-redes{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.sociales h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #024A70;
+  font-size: 1.8rem;
+}
+
+.redes {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  margin-right: 60px;
+}
+
+.redes:hover {
+  transform: scale(1.2);
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #333;               
+  text-align: center;        
+  padding: 1.5rem 0;         
+  margin-top: 3rem;          
+  border-top: 2px solid #e0e0e0;
+}
+
+.footer a {
+  color: #333;            
+  text-decoration: none;     
+  margin: 0.5rem;
+  transition: color 0.3s ease;
+  font-weight: 500;          
+}
+
+.footer a:hover {
+  color: #024A70; 
+}
+
+/* ===== CONTACTO ===== */
+.contacto {
+  background-color: #f9f9f9; 
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #024A70;
+}
+
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-color: #024A70;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.formulario-contacto button {
+  padding: 0.8rem;
+  background-color: #024A70;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background-color: #0056b3;
+}
+
